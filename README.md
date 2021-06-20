@@ -1,2 +1,2 @@
 # Practice
-Hello, world.
+gitの使い方やらar.jsの練習やら
