@@ -2,7 +2,9 @@
 <script src='https://aframe.io/releases/0.9.0/aframe.min.js'></script>
 <!-- AR.js -->
 <script src='https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js'></script>
-
+<!-- shader -->
+<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="shader-grid-glitch.js"></script>
 <style>
   .arjs-loader {
     height: 100%;
@@ -48,13 +50,14 @@
     smoothTolerance=".01"
     smoothThreshold="5"
     >
-      <a-image
-      src="libra.png"
-      scale="1 1 1"
-      class="clickable"
-      rotation="-90 0 0"
-      gesture-handler
-      ></a-image>
+      <a-entity
+      geometry="primitive: plane;"
+      material="
+      shader:gif;
+      src:#libra;
+      color:white;
+      opacity:1"
+      position="0 0 0"></a-entity>
     </a-nft>
   </a-scene>
 </body>
