@@ -8,25 +8,34 @@
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
 </head>
 
-<body style="margin: 0; overflow: hidden;">
+<body style="margin : 0px; overflow: hidden;">
+    <div class="arjs-loader">
+      <div>Loading, please wait...</div>
+    </div>
     <a-scene
-    vr-mode-ui="enabled: false;"
-    loading-screen="enabled: false;"
-    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-    id="scene"
-    embedded
-    gesture-detector>
-        <a-nft
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      gesture-detector
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    >
+      <a-nft
         type="nft"
         url="https://arjs-cors-proxy.herokuapp.com/https://saizaki.github.io/Practice/images/libra"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
-        smoothThreshold="5">
-            <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
-        </a-ntf>
-        <a-entity camera></a-entity>
+        smoothThreshold="5"
+      >
+        <a-image
+            src="images/libra.gif"
+            scale="1 1 1"
+            rotation="-90 0 0"
+            gesture-handler
+        ></a-image>
+      </a-nft>
+      <a-entity camera></a-entity>
     </a-scene>
-</body>
+  </body>
 
 </html>
