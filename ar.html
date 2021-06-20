@@ -1,5 +1,7 @@
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<!-- A-Frame -->
+<script src='https://aframe.io/releases/0.9.0/aframe.min.js'></script>
+<!-- AR.js -->
+<script src='https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js'></script>
 
 <style>
   .arjs-loader {
@@ -42,12 +44,7 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-entity
-        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-        scale="5 5 5"
-        position="50 150 0"
-      >
-      </a-entity>
+      <a-image src="images/libra.gif" scale="5 5 5" position="50 150 0"></a-image>
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
