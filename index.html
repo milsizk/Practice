@@ -14,6 +14,7 @@
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
+            gesture-detector
         >
             <a-marker
                 id="animated-marker"
@@ -28,7 +29,9 @@
                 <a-image
                     src="assets/asset.gif"
                     scale="1 1 1"
+                    class="clickable"
                     rotation="-90 0 0"
+                    gesture-handler
                 ></a-image>
             </a-marker>
 
